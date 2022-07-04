@@ -11,8 +11,10 @@ a
   text-decoration: none
   list-style-type: none
 
-p
+p,
+li
   margin: 0
+  color: #1c2231
 
 ul
   list-style-type: none
@@ -22,24 +24,388 @@ ul
 img
   max-width: 100%
 
+// шрифты//
+  @font-face 
+  font-family: 'Myriad Pro':
+  src: url('MyriadPro-SemiboldIt.eot')
+  src: local('Myriad Pro Semibold Italic'), local('MyriadPro-SemiboldIt')
+  src: url('MyriadPro-SemiboldIt.woff2') format('woff2')
+  src: url('MyriadPro-SemiboldIt.woff') format('woff')
+  font-weight: 600
+  font-style: italic
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-Black.eot')
+  src: local('Myriad Pro Black'), local('MyriadPro-Black')
+  src: url('MyriadPro-Black.woff2') format('woff2')
+  src: url('MyriadPro-Black.woff') format('woff')
+  font-weight: 900
+  font-style: normal
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-Semibold.eot')
+  src: local('Myriad Pro Semibold'), local('MyriadPro-Semibold')
+  src: url('MyriadPro-Semibold.woff2') format('woff2')
+  src: url('MyriadPro-Semibold.woff') format('woff')
+  font-weight: 600
+  font-style: normal
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-BlackIt.eot')
+  src: local('Myriad Pro Black Italic'), local('MyriadPro-BlackIt')
+  src: url('MyriadPro-BlackIt.woff2') format('woff2')
+  src: url('MyriadPro-BlackIt.woff') format('woff')
+  font-weight: 900
+  font-style: italic
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-Regular.eot')
+  src: local('Myriad Pro Regular'), local('MyriadPro-Regular')
+  src: url('MyriadPro-Regular.woff2') format('woff2')
+  src: url('MyriadPro-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-Bold.eot')
+  src: local('Myriad Pro Bold'), local('MyriadPro-Bold')
+  src: url('MyriadPro-Bold.woff2') format('woff2')
+  src: url('MyriadPro-Bold.woff') format('woff')
+  font-weight: bold
+  font-style: normal
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-BoldIt.eot')
+  src: local('Myriad Pro Bold Italic'), local('MyriadPro-BoldIt')
+  src: url('MyriadPro-BoldIt.woff2') format('woff2')
+  src: url('MyriadPro-BoldIt.woff') format('woff')
+  font-weight: bold
+  font-style: italic
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-LightIt.eot')
+  src: local('Myriad Pro Light Italic'), local('MyriadPro-LightIt')
+  src:  url('MyriadPro-LightIt.woff2') format('woff2')
+  src:  url('MyriadPro-LightIt.woff') format('woff')
+  font-weight: 300
+  font-style: italic
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-It.eot')
+  src: local('Myriad Pro Italic'), local('MyriadPro-It')
+  src: url('MyriadPro-It.woff2') format('woff2')
+  src: url('MyriadPro-It.woff') format('woff')
+  font-weight: normal
+  font-style: italic
+
+
+@font-face 
+  font-family: 'Myriad Pro'
+  src: url('MyriadPro-Light.eot')
+  src: local('Myriad Pro Light'), local('MyriadPro-Light')
+  src: url('MyriadPro-Light.woff2') format('woff2')
+  src: url('MyriadPro-Light.woff') format('woff')
+  font-weight: 300
+  font-style: normal
+
+
 body,
 header
+  font-family: Myriad Pro, Arial, sans-serif
   font-weight: 400
   box-sizing: border-box
   background: #FFF
   .container
-    padding-left: 75px
-    padding-right: 75px
+    padding-left: 140px
+    padding-right: 140px
+
+// иконки header//
+.header-icon
+  width: 22px
+  height: 14px
+  padding-right: 8px 
 
   // заголовки//
 .section-offer
   font-size: 52px
   line-height: 20px
+  margin: 0
+  color: #1c2231
 .section-title
   font-size: 52px
   font-weight: bold
   line-height: 20px
+  margin: 0
+  color: #1c2231
+  text-align: center
+  margin-bottom: 45px
 .section-subtitle
   font-size: 52px
   line-height: 20px
+  margin: 0
+  color: #1c2231
+  font-weight: 300
+  text-align: center
+.subtitle
+  margin: 0
+  font-size: 24px
+  margin-bottom: 10px
+
+
+// header///
+
+.header
+  background: url('/img/bg-header.png')
+  background-size: auto
+    background-position: top
+  .header-top
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 16px
+    justify-content: space-between
+    .header-top-block
+      display: flex
+      align-items: center
+      width: 34%
+      .header-logo
+        margin-right: 30px
+      .header-logo img
+        width: 200px
+        height: 55px
+      .header-top-block-descr
+        font-size: 12px
+        font-weight: 400
+        line-height: 17px
+    .header-top-address
+      display: flex
+      width: 11%
+      align-items: center
+      .header-address
+        color: #595959
+        font-size: 12px
+        font-style: inherit
+    .header-top-schedule
+      display: flex
+      width: 10%
+      margin-right: 60px
+      align-items: center
+      .header-schedule
+        color: #595959
+        font-size: 12px
+    .header-top-button
+      display: flex
+      width: 12%
+      align-items: center
+      .btn-header
+        padding: 11px 14px
+        color: #dc282c
+        background-color: #fdeded
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 10px
+  .header-nav
+    display: flex
+    justify-content: space-between
+    .header-nav-list
+      display: flex
+      .header-nav-item
+        margin-right: 50px
+        font-weight: 600
+        .header-nav-link
+          font-size: 18px
+          color: #1c2231
+    .header-nav-tel
+      font-size: 22px
+      font-weight: 600
+      color: #1c2231
+
+.offer
+  background: url('/img/bg-header.png')
+  min-height: 780px
+  background-size: cover
+  position: relative
+  margin-bottom: 195px
+  .offer-choice
+    display: flex
+    padding-top: 220px
+    justify-content: space-between
+    .offer-descrprion
+      width: 50%
+      .section-offer,
+      .section-offer-span
+        font-size: 52px
+        line-height: 54px
+        margin: 0
+      .section-offer
+        font-weight: bold
+        margin-bottom: 44px
+        .section-offer-span
+          font-weight: 300
+      .offer-descr-info
+        margin-bottom: 129px
+      .offer-descr,
+      .offer-descr-span
+        font-size: 18px
+        display: block
+        width: 45%
+      .offer-descr-span
+        font-weight: bold
+        display: block
+      .offer-btn
+        color: #fff
+        font-size: 14px
+        text-transform: uppercase
+        padding: 21px 60px
+        background: red
+  .offer-bottom
+    background: url(/img/group-black.png)
+    position: absolute
+    background-repeat: no-repeat
+    bottom: 0
+    background-size: 100%
+    left: 50%
+    transform: translate(-50%, 33%)
+    .offer-bottom-descr
+      font-size: 14px
+      color: #fff
+      padding-top: 23px
+      width: 48%
+      padding-bottom: 75px
+      text-align: center
+      margin: auto
+      line-height: 26px
+
+// products//
+
+.products
+  padding-bottom: 130px
+  background: url('/img/products-bg.png')
+  min-height: 780px
+  background-size: cover
+  .products-subtitle
+    margin-bottom: 130px
+  .products-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: end
+    .products-list
+      width: 46%
+      margin-bottom: 50px
+      .products-list-info
+        display: flex
+        margin-bottom: 40px
+        align-items: baseline
+        .products-list-info img
+          width: 25px
+          height: 20px
+        .products-description
+          font-size: 24px
+          font-weight: 500
+          margin-right: 30px
+          width: 34%
+        .products-description a img
+         margin-left: 8px
+      .products-images
+        max-width: 408px
+        max-height: 282px
+      .products-images img
+        width: 100%
+        max-height: 260px
+        object-fit: contain
+
+// услуги//
+
+.services
+  padding-bottom: 130px
+  background: url('/img/services-bg.png')
+  min-height: 780px
+  background-size: cover
+  padding-top: 185px
+  .services-subtitle
+    margin-bottom: 73px
+  .services-block
+    .services-block-left 
+      .services-block-flex
+        display: flex
+        align-items: center
+        margin-bottom: 126px
+        .services-block-images
+          margin-right: 50px
+        .services-block-info
+          .services-block-info-descr
+            font-size: 18px
+            margin-bottom: 25px
+          .services-block-info-link
+            font-size: 14px
+            color: #dc282c
+            text-transform: uppercase 
+    .services-block-right 
+      .services-block-flex
+        display: flex
+        align-items: center
+        margin-bottom: 126px
+        justify-content: end
+        .services-block-info
+          margin-right: 50px
+          .services-block-info-descr
+            font-size: 18px
+            margin-bottom: 25px
+          .services-block-info-link
+            font-size: 14px
+            color: #dc282c
+            text-transform: uppercase 
+
+// гарантия//
+
+.guarantee
+  padding-bottom: 70px
+  background: url('/img/guarantee-bg.png')
+  background-size: cover
+  padding-top: 150px
+  background-repeat: no-repeat
+  .guarantee-subtitle
+    padding-bottom: 26px
+    width: 46%
+    margin: auto
+    line-height: 44px
+  .products-title
+    margin-bottom: 100px
+  .guarantee-block
+    margin-bottom: 50px
+    .guarantee-info
+      display: flex
+      .guarantee-info-images
+        margin-right: 50px
+      .guarantee-info-images img
+        max-width: 273px
+        max-height: 300px
+      .guarantee-info-descr
+        .guarantee-text
+            font-size: 18px
+            margin-bottom: 20px
+        .guarantee-info-list
+          list-style: disc
+          padding-left: 17px
+          .guarantee-info-item
+            margin-bottom: 10px
+          
+
+
 
