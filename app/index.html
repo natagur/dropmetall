@@ -3,7 +3,8 @@
 	<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Дроплайн </title>
 		<link href="css/app.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
@@ -14,7 +15,7 @@
         <div class="header-top">
           <div class="header-top-block">
             <a href="#" class="header-logo">
-              <img src="/img/logo.png" alt="логотип">
+              <img src="/img/footer-logo.png" alt="логотип">
             </a>
             <p class="header-top-block-descr">
               Крупнейший поставщик металлоконструкций различного назначения с 2013г
@@ -37,20 +38,31 @@
             <a href="#" class="btn btn-header">Перезвоните мне</a>
           </div>
         </div>
+        <a href="" class="btn-header burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </a>
         <div class="header-nav">
           <ul class="header-nav-list">
+            <div class="cross"> 
+              <span style="background-color:#000;"></span> 
+              <span style="background-color:#000;"></span> 
+              <span style="background-color:#000;"></span> 
+              <span style="background-color:#000;"></span> 
+            </div>
             <li class="header-nav-item">
-              <a href="#" class="header-nav-link">
+              <a href="/" class="header-nav-link">
                 Главная
               </a>
             </li>
             <li class="header-nav-item">
-              <a href="#" class="header-nav-link">
+              <a href="/kolesootboyniki.html" class="header-nav-link">
                 Продукция
               </a>
             </li>
             <li class="header-nav-item">
-              <a href="#" class="header-nav-link">
+              <a href="/services.html" class="header-nav-link">
                 Услуги
               </a>
             </li>
@@ -149,7 +161,7 @@
                 </p>
               </div>
               <div class="products-images">
-                <img src="/img/products2.png" alt="изображение">
+                <img src="/img/products12.png" alt="изображение">
               </div>
             </div>
             <div class="products-list">
@@ -297,7 +309,7 @@
                 <img src="/img/guarantee1.png">
               </div>
               <div class="guarantee-info-descr">
-                <h4 class="subtitle">
+                <h4 class="subtitle services-subtitle">
                   Контроль качества используемых материалов 
                 </h4>
                 <p class="guarantee-text">
@@ -324,7 +336,7 @@
                 <img src="/img/guarantee2.png">
               </div>
               <div class="guarantee-info-descr">
-                <h4 class="subtitle">
+                <h4 class="subtitle services-subtitle">
                   Нормативно-техническая документация
                 </h4>
                 <p class="guarantee-text">
@@ -345,7 +357,7 @@
                 <img src="/img/guarantee3.png">
               </div>
               <div class="guarantee-info-descr">
-                <h4 class="subtitle">
+                <h4 class="subtitle services-subtitle">
                   Требования к подготовке материалов 
                 </h4>
                 <p class="guarantee-text">
@@ -369,7 +381,7 @@
                 <img src="/img/guarantee4.png">
               </div>
               <div class="guarantee-info-descr">
-                <h4 class="subtitle">
+                <h4 class="subtitle services-subtitle">
                   Контроль на этапе производства Разметка, изготовление шаблонов 
                 </h4>
                 <p class="guarantee-text">
@@ -396,7 +408,7 @@
                 <img src="/img/guarantee5.png">
               </div>
               <div class="guarantee-info-descr">
-                <h4 class="subtitle">
+                <h4 class="subtitle services-subtitle">
                   Контроль качества сварки
                 </h4>
                 <p class="guarantee-text">
@@ -419,25 +431,29 @@
         <div class="container">
           <div class="request-block">
             <h2 class="section-title request-title">
-              Заявка на расчет 
+              Заявка на расчет
             </h2>
             <p class="request-descr">
-              Закажите расчет изготовления металлоконструкци
+              Закажите расчет изготовления металлоконструкци 
+              <a class="request-link" href="#">прямо сейчас</a>
             </p>
+            
           </div>
           <div class="request-form">
             <form action="">
-              <input type="text" name="" id="" placeholder="Имя">
-              <input type="tel" name="" id="" placeholder="Телефон">
-              <input type="email" name="" id="" placeholder="E-mail">
-              <textarea name="comment" id="" cols="30" rows="10" placeholder="Что хотите расчитать?"></textarea>
-              <button>
+              <input class="form-input" type="text" name="" id="" placeholder="Имя">
+              <input class="form-input" type="tel" name="" id="" placeholder="Телефон">
+              <input class="form-input" type="email" name="" id="" placeholder="E-mail">
+              <input class="form-input"  type="text" name="" id="" placeholder="Что хотите расчитать?">
+              <button class="btn form-btn">
                 отправить заявку
               </button>
-              <label>
-                <input class="footer__input-checkbox" type="checkbox" id="checkbox1" name="checkbox" checked="checked" required="">
-                Я принимаю условия обработки <a href="#" class="form-link">персональных данных</a>
-              </label>
+              <div class="form-flex">
+                <input class="form-input-checkbox" type="checkbox" id="checkbox1" name="checkbox" checked="checked" required="">
+                <label for="checkbox1">
+                  Я принимаю условия обработки <a href="#" class="form-link">персональных данных</a>
+                </label>
+              </div>
             </form>
           </div>
         </div>
@@ -494,7 +510,7 @@
       <!-- доставка -->
       <section class="delivery">
         <div class="container">
-          <h3 class="section-subtitle">
+          <h3 class="section-subtitle delivery-subtitle">
             Осуществляем доставку  
            </h3>
            <h2 class="section-title products-title">
@@ -506,33 +522,36 @@
            <div class="delivery-block">
             <div class="delivery-flex">
               <div class="delivery-info">
-                <img src="">
+                <img src="/img/delivery-elips.png">
                 <p class="delivery-descr">
                   При оформлении заказа
                   рассчитаем сроки и стоимость
                 </p>
               </div>
               <div class="delivery-info">
-                <img src="">
+                <img src="/img/delivery-elips.png">
                 <p class="delivery-descr">
                   Отправляем только
                     проверенными компаниями
                 </p>
               </div>
               <div class="delivery-info">
-                <img src="">
+                <img src="/img/delivery-elips.png">
                 <p class="delivery-descr">
                   Обязательно страхуем
                   весь отправленный груз
                 </p>
               </div>
               <div class="delivery-info">
-                <img src="">
+                <img src="/img/delivery-elips.png">
                 <p class="delivery-descr">
                   Возможна экспресс
                   доставка авиалиниями
                 </p>
               </div>
+            </div>
+            <div class="delivery-bg">
+              <img src="/img/delivery-bg1.png">
             </div>
            </div>
         </div>
@@ -547,17 +566,27 @@
             <div class="question-bg"></div>
             <div class="question-form">
               <form action="">
-                <input type="text" name="" id="" placeholder="Имя">
-                <input type="tel" name="" id="" placeholder="Телефон">
-                <input type="email" name="" id="" placeholder="E-mail">
-                <textarea name="comment" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-                <button>
-                  отправить сообщение
-                </button>
-                <label>
-                  <input class="footer__input-checkbox" type="checkbox" id="checkbox1" name="checkbox" checked="checked" required="">
-                  Я принимаю условия обработки <a href="#" class="form-link">персональных данных</a>
-                </label>
+                <div class="form-input">
+                  <div class="form-input-flex">
+                    <input type="text" name="" id="" placeholder="Имя">
+                    <input type="tel" name="" id="" placeholder="Телефон">
+                    <input type="email" name="" id="" placeholder="E-mail">
+                  </div>
+                  <div class="form-textarea-flex">
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                  </div>
+                </div>
+                <div class="form-botoom">
+                  <div class="question-form-block-link">
+                    <a href="#" class="question-form-link">
+                      отправить сообщение
+                    </a>
+                  </div>
+                  <input class="input-checkbox" type="checkbox" id="checkbox2" name="checkbox" checked="checked" required="">
+                  <label for="checkbox2">
+                    Я принимаю условия обработки <a href="#" class="form-link">персональных данных</a>
+                  </label>
+                </div>
               </form>
             </div>
            </div>
@@ -568,35 +597,42 @@
         <!-- map -->
         <div class="container">
           <div class="map-info">
-            <div class="map-info-tel">
-              <div class="map-info-icon">
-                <img src="">
-              </div>
-              <div class="map-info-text">
-                <span class="map-info-span">Контактный телефон</span>
-                <a href="tel:88123090290" class="map-info-link">8 (812) 309 02 90</a>
-              </div>
-            </div>
-            <div class="map-info-mail">
-              <div class="map-info-icon">
-                <img src="">
-              </div>
-              <div class="map-info-text">
-                <span class="map-info-span">электронная почта</span>
-                <a href="mailto:info@dropmetall.ru" class="map-info-link">info@dropmetall.ru</a>
-              </div>
-            </div>
-            <div class="map-info-tel">
-              <div class="map-info-icon">
-                <img src="">
-              </div>
-              <div class="map-info-text">
-                <span class="map-info-span">Офис отдела продаж</span>
-                <address class="map-info-link">г. Санкт-Петербург, ул. Цветочная д.2</address>
+            <div class="map-info-block">
+              <div class="map-info-block-choice">
+                <div class="map-info-tel">
+                  <div class="map-info-icon">
+                    <img src="/img/map-tel.svg">
+                  </div>
+                  <div class="map-info-text">
+                    <span class="map-info-span">Контактный телефон</span>
+                    <a href="tel:88123090290" class="map-info-link">8 (812) 309 02 90</a>
+                  </div>
+                </div>
+                <div class="map-info-mail">
+                  <div class="map-info-icon">
+                    <img src="/img/map-mail.svg">
+                  </div>
+                  <div class="map-info-text">
+                    <span class="map-info-span">электронная почта</span>
+                    <a href="mailto:info@dropmetall.ru" class="map-info-link">info@dropmetall.ru</a>
+                  </div>
+                </div>
+                <div class="map-info-geo">
+                  <div class="map-info-icon">
+                    <img src="/img/icon-geo.svg">
+                  </div>
+                  <div class="map-info-text">
+                    <span class="map-info-span">Офис отдела продаж</span>
+                    <address class="map-info-link">г. Санкт-Петербург, ул. Цветочная д.2</address>
+                  </div>
+                </div>
                 <p class="map-info-desc">
                   График работы: ПН – ПТ с 9 до 20 
                 </p>
               </div>
+            </div>
+            <div class="map-icon">
+              
             </div>
           </div>
         </div>
@@ -646,21 +682,27 @@
             <a href="tel:88123090290" class="footer-top-tel">8 (812) 309 02 90</a>
           </div>
           <div class="footer-bottom">
-            <div class="footer-bottom-left">
-              <a href="#" class="footer-logo">
-                <img src="" alt="логотип">
-              </a>
-              <small class="footer-small"> 
-                © Dropline LTD 2022 - Крупнейший поставщик металлоконструкций различного назначения с 2013г
-              </small>
-            </div> 
-            <div class="footer-bottom-right">
-              <a href="#" class="footer-bottom-right-link">Юридическим лицам</a>
-              <a href="#" class="footer-bottom-right-link">Политика конфиденциальности</a>
+            <a href="#" class="footer-logo">
+              <img src="/img/footer-logo.png" alt="логотип">
+            </a>
+            <div class="footer-flex">
+              <div class="footer-bottom-left">
+                <small class="footer-small"> 
+                  © Dropline LTD 2022 - Крупнейший поставщик металлоконструкций различного назначения с 2013г
+                </small>
+              </div> 
+              <div class="footer-bottom-right">
+                <a href="#" class="footer-bottom-right-link">Юридическим лицам</a>
+                <a href="#" class="footer-bottom-right-link">Политика конфиденциальности</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>
